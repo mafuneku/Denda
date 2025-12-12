@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="eu">
+<head>
+    <title>Denda</title>
+</head>
+<style>
+    * { padding: 0; margin: 0; }
+    body {
+        background: #ffffff;
+    }
+    header, nav, main, footer {
+        background: #c3e7ee;
+    }
+
+    .bideojokoak div {
+        background: #eef8fd;
+    }
+
+    body {
+        max-width: 762px;
+        margin: auto;
+        border: 1px dashed black;
+    }
+    header {
+        border: 1px dashed black;
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+    }
+    nav {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+    main {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+    footer {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+
+    .bideojokoak {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+	nav img {
+        width: 40px;
+    }
+    
+    #menuLista a {
+        position: relative;
+        display: inline-block;
+    }
+
+    #menuLista a span {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        padding: 2px 6px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 14px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s ease;
+    }
+
+    #menuLista a:hover span {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bideojokoak img {
+        border-radius: 15px;
+        object-fit:cover; 
+        width: 150px;
+        border: 1px #000000 solid;
+    }
+    
+    header img {
+        border-radius: 10px;
+        object-fit: cover; 
+        width: 200px;
+        border: 1px #000000 solid;
+    }
+    
+</style>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logoa.jpg" alt="Lea Artibai Ikastetxea">
+    </div>
+    <h1>Denda</h1>
+</header>
+
+<nav id="menua">
+    <ul id="menuLista">
+    <a href="index.html">
+    <img src="img/Hasiera.jpg">
+    <span>Hasiera</span>
+    </a>
+
+    <a href="katalogoa.html">
+    <img src="img/Katalogoa.jpg">
+    <span>Katalogoa</span>
+    </a>
+
+    <a href="nobedadeak.html">
+    <img src="img/Nobedadeak.jpg">
+    <span>Nobedadeak</span>
+    </a>
+
+    <a href="Kontaktua.html">
+    <img src="img/Kontaktua.jpg">
+    <span>Kontaktua</span>
+    </a>
+
+    <a href="eskaintzak.html">
+    <img src="img/Eskaintzak.jpg">
+    <span>Eskaintzak</span>
+    </a>
+
+    </ul>
+</nav>
+
+<main>
+        <p class="path"><a href="index.html">Hasiera</a> &gt; <a href="nobedadeak.html">Nobedadeak</a> &gt;</p>
+    <section>
+        <h2>Hasiera</h2>
+        <p>Bideojoko honenak merkeago lortu!</p>
+
+        <h3>Eguneko jokoa</h3>
+        <p>Electronic Arts - Battlefield 6</p>
+
+        <h3>Trailer-a</h3>
+        <p>Battlefield 6 | Tráiler oficial de presentación</p>
+        <video src="img/videoplayback (1).mp4" width="100%" controls></video>
+
+    </section>
+
+</main>
+
+<footer>
+    © 2025 Lea Artibai Ikastetxea
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

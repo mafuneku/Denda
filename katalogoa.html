@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+    <title>Katalogoa</title>
+</head>
+<style>
+    * { padding: 0; margin: 0; }
+    body {
+        background: #ffffff;
+    }
+    header, nav, main, footer {
+        background: #c3e7ee;
+    }
+
+    .bideojokoak div {
+        background: #eef8fd;
+    }
+
+    body {
+        max-width: 762px;
+        margin: auto;
+        border: 1px dashed black;
+    }
+    header {
+        border: 1px dashed black;
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+    }
+    nav {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+    main {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+    footer {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+
+	.bideojokoak div {
+		border: 1px dashed black;
+        padding: 1.96850393701%;
+	}
+	.bideojokoak {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .div1 { grid-area: 1 / 1 / 2 / 3; }
+    .div2 { grid-area: 1 / 3 / 2 / 4; }
+    .div3 { grid-area: 1 / 4 / 2 / 5; }
+    .div4 { grid-area: 2 / 1 / 3 / 3; }
+    .div5 { grid-area: 2 / 3 / 3 / 4; }
+    .div6 { grid-area: 2 / 4 / 3 / 5; }
+    .div7 { grid-area: 3 / 1 / 4 / 3; }
+    .div8 { grid-area: 3 / 3 / 4 / 4; }
+    .div9 { grid-area: 3 / 4 / 4 / 5; }
+    .div10 { grid-area: 4 / 1 / 5 / 3; }
+    .div11 { grid-area: 4 / 3 / 5 / 4; }
+    .div12 { grid-area: 4 / 4 / 5 / 5; }
+    .div13 { grid-area: 5 / 1 / 6 / 3; }
+    .div14 { grid-area: 5 / 3 / 6 / 4; }
+    .div15 { grid-area: 5 / 4 / 6 / 5; }
+    .div16 { grid-area: 6 / 1 / 7 / 3; }
+    .div17 { grid-area: 6 / 3 / 7 / 4; }
+    .div18 { grid-area: 6 / 4 / 7 / 5; }
+    .div19 { grid-area: 7 / 1 / 8 / 3; }
+    .div20 { grid-area: 7 / 3 / 8 / 5; }
+	@media only screen and (max-width: 762px) {
+			.bideojokoak {
+				grid-template-columns: 1fr;
+				grid-template-rows: none;
+			}
+			.bideojokoak > div {
+				grid-area: auto !important;
+			}
+		}
+
+	    nav img {
+        width: 40px;
+    }
+    
+    #menuLista a {
+        position: relative;
+        display: inline-block;
+    }
+
+    #menuLista a span {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        padding: 2px 6px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 14px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s ease;
+    }
+
+    #menuLista a:hover span {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bideojokoak img {
+        border-radius: 15px;
+        object-fit: cover; 
+        width: 150px;
+        border: 1px #000000 solid;
+    }
+
+    header img {
+        border-radius: 10px;
+        object-fit: cover; 
+        width: 200px;
+        border: 1px #000000 solid;
+    }
+    
+    
+</style>
+
+<body>
+
+<header>
+    <img src="img/logoa.jpg" alt="logoa">
+    <h1>Denda</h1>
+</header>
+
+<nav id="menua">
+    <ul id="menuLista">
+    <a href="index.html">
+    <img src="img/Hasiera.jpg">
+    <span>Hasiera</span>
+    </a>
+
+    <a href="katalogoa.html">
+    <img src="img/Katalogoa.jpg">
+    <span>Katalogoa</span>
+    </a>
+
+    <a href="nobedadeak.html">
+    <img src="img/Nobedadeak.jpg">
+    <span>Nobedadeak</span>
+    </a>
+
+    <a href="Kontaktua.html">
+    <img src="img/Kontaktua.jpg">
+    <span>Kontaktua</span>
+    </a>
+
+    <a href="eskaintzak.html">
+    <img src="img/Eskaintzak.jpg">
+    <span>Eskaintzak</span>
+    </a>
+
+    </ul>
+</nav>
+
+<main>
+<section>
+    <p class="path"><a href="index.html">Hasiera</a> &gt; <a href="katalogoa.html">Katalogoa</a> &gt;</p>
+    <h2>Katalogoa</h2>
+	
+	<div class="bideojokoak">
+
+    <div id="eskaintza1" class="div1">
+        <img src="img/001.png"><br>
+        Nintendo<br>
+        Zelda Tears of The Kingdom<br>
+        Egoera: berria<br>
+        Formatua: Switch<br>
+        Salneurria: 69,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza2" class="div2">
+        <img src="img/002.png"><br>
+        Rockstar Games<br>
+        GTA 6<br>
+        Egoera: berria<br>
+        Formatua: PS5/Xbox Series<br>
+        Salneurria: 69,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza3" class="div3">
+        <img src="img/003.png"><br>
+        FromSoftware<br>
+        Elden Ring<br>
+        Egoera: berria<br>
+        Formatua: PC/Xbox/PS5<br>
+        Salneurria: 39,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza4" class="div4">
+        <img src="img/004.png"><br>
+        CD Projekt RED<br>
+        Cyberpunk 2077<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 20,00 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza5" class="div5">
+        <img src="img/005.png"><br>
+        FromSoftware<br>
+        BloodBorne<br>
+        Egoera: berria<br>
+        Formatua: PS4<br>
+        Salneurria: 20,00 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza6" class="div6">
+        <img src="img/006.png"><br>
+        Ubisoft<br>
+        Assassins creed Mirage<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 20,00 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza7" class="div7">
+        <img src="img/007.png"><br>
+        Electronic Arts<br>
+        FC 25<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 79,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza8" class="div8">
+        <img src="img/008.png"><br>
+        Bandai Namco<br>
+        Tekken 8<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 69,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza9" class="div9">
+        <img src="img/009.png"><br>
+        Mojang<br>
+        Minecraft<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 10,00 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza10" class="div10">
+        <img src="img/010.png"><br>
+        Santa Monica Studio<br>
+        God of War<br>
+        Egoera: berria<br>
+        Formatua: PS5<br>
+        Salneurria: 20,00 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza11" class="div11">
+        <img src="img/11.jpg"><br>
+        Nintendo<br>
+        Super Mario Odyssey<br>
+        Egoera: berria<br>
+        Formatua: Switch<br>
+        Salneurria: 39,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza12" class="div12">
+        <img src="img/12.jpg"><br>
+        Capcom<br>
+        Resident Evil 4 Remake<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 49,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza13" class="div13">
+        <img src="img/13.jpg"><br>
+        Naughty Dog<br>
+        The Last of Us Part II<br>
+        Egoera: berria<br>
+        Formatua: PS5<br>
+        Salneurria: 29,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza14" class="div14">
+        <img src="img/14.jpg"><br>
+        Square Enix<br>
+        Final Fantasy VII Remake<br>
+        Egoera: berria<br>
+        Formatua: PS5/PC<br>
+        Salneurria: 39,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza15" class="div15">
+        <img src="img/15.jpg"><br>
+        Sega<br>
+        Like a Dragon: Infinite Wealth<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 59,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza16" class="div16">
+        <img src="img/16.jpg"><br>
+        Ubisoft<br>
+        Far Cry 6<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 29,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza17" class="div17">
+        <img src="img/17.jpg"><br>
+        Blizzard<br>
+        Diablo IV<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 69,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza18" class="div18">
+        <img src="img/18.jpg"><br>
+        Activision<br>
+        Call of Duty: Modern Warfare III<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 59,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza19" class="div19">
+        <img src="img/19.jpg"><br>
+        Valve<br>
+        Half-Life Alyx<br>
+        Egoera: berria<br>
+        Formatua: PC (VR)<br>
+        Salneurria: 50,00 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza20" class="div20">
+        <img src="img/20.jpg"><br>
+        Larian Studios<br>
+        Baldur's Gate 3<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5<br>
+        Salneurria: 59,99 €
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    </div>
+
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Lea Artibai Ikastetxea</p>
+</footer>
+
+</body>
+</html>
