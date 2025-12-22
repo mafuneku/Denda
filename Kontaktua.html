@@ -60,7 +60,29 @@
         display: inline-block;
     }
 
+    #kontaktuLista a {
+        position: relative;
+        display: inline-block;
+    }
+
+
     #menuLista a span {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        padding: 2px 6px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 14px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s ease;
+    }
+
+    #kontaktuLista a span {
         position: absolute;
         bottom: -25px;
         left: 50%;
@@ -81,11 +103,20 @@
         opacity: 1;
     }
 
-    .bideojokoak img {
+    #kontaktuLista a:hover span {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    main img {
         border-radius: 15px;
         object-fit:cover; 
         width: 150px;
         border: 1px #000000 solid;
+    }
+
+    main ul {
+        background: #000;
     }
     
     header img {
@@ -94,8 +125,9 @@
         width: 200px;
         border: 1px #000000 solid;
     }
+
     
-        #menuToggle {
+    #menuToggle {
         display: none;
     }
 
@@ -129,6 +161,8 @@
     }
     }
 
+    
+
 </style>
 
 <body>
@@ -139,6 +173,8 @@
     </div>
     <h1>Denda</h1>
 </header>
+
+
 <input type="checkbox" id="menuToggle">
 <label for="menuToggle" class="menu-btn">☰ Menua</label>
 <nav id="menua">
@@ -170,19 +206,28 @@
 
     </ul>
 </nav>
+
 <main>
-        <p class="path"><a href="index.html">Hasiera</a> &gt; <a href="nobedadeak.html">Nobedadeak</a> &gt;</p>
+        <p><a href="index.html">Hasiera</a> &gt; <a href="nobedadeak.html">Kontaktua</a> &gt;</p>
     <section>
-        <h2>Hasiera</h2>
-        <p>Bideojoko honenak merkeago lortu!</p>
+        <h2>Kontaktua</h2>
+        <p>Gurekin kontaktatzeko moduak</p>
+        <ul id="kontaktuLista">
+            <a href="nobedadeak.html">
+            <img src="img/Whatsapp.jpg">
+            <span>Whatsapp</span>
+            </a>
 
-        <h3>Eguneko jokoa</h3>
-        <p>Electronic Arts - Battlefield 6</p>
+            <a href="Kontaktua.html">
+            <img src="img/Gmail.jpg">
+            <span>Gmail</span>
+            </a>
 
-        <h3>Trailer-a</h3>
-        <p>Battlefield 6 | Tráiler oficial de presentación</p>
-        <video src="img/videoplayback (1).mp4" width="100%" controls></video>
-
+            <a href="eskaintzak.html">
+            <img src="img/Instagram.jpg">
+            <span>Instagram</span>
+            </a>
+        </ul>
     </section>
 
 </main>

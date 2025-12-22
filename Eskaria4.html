@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>saskia</title>
+		<title>Eskaria</title>
 		<style>
 	* {padding: 0; padding: 0;}
     * { padding: 0; margin: 0; }
@@ -139,14 +139,40 @@
         gap: 10px;
         align-items: center;
     }
-    table {
-        width: 200px;
+    }
+
+    form {
+        border: 1px #000000 solid;
+        width:fit-content;
+        padding: 1.96850393701%;
+        background-color: rgba(255, 255, 255, 0.473);
+    }
+       @media (max-width: 762px) {
+    .menu-btn {
+        display: block;
+        margin: 1.96850393701%;
+        margin-bottom: 0;
+    }
+    #menua {
+        display: none;
+    }
+    #menuToggle:checked + .menu-btn + #menua {
+        display: block;
+    }
+    #menuLista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    form {
+        width: fit-content;
     }
     }
-        
-    table {
-        margin: auto;
+    form img {
+        width:70px
     }
+
 		</style>
 	</head>
 	<body>
@@ -185,53 +211,34 @@
 			</a>
 		</ul>
 	</nav>
-<main>
-	<section>
-    <h1>Saskia</h1>
+	<main>
+    <p class="path"><a href="index.html">Hasiera</a> &gt; <a href="Eskaria.html">Eskaria</a> &gt; <a href="Eskaria.html">Azken pausoa</a> &gt;</p>
+		<section>
+    <h1>Eskaria</h1>
 
-    <h2>Produktuak</h2>
+    <h2>Ordainketa mota</h2>
+      
+    <form>
+      <div class="ordainketa">
+      <div>
+        <input type="radio" id="txartela" name="ordainketa" value="txartela">
+        <label for="txartela">Kreditu-txartela</label>
+      </div>
 
-    <div class="produktuak">
-      <table>
-        <thead>
-          <tr>
-            <th>Produktua</th>
-            <th>Salneurria</th>
-            <th>Kopurua</th>
-            <th>Guztira</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Grand Theft Auto VI</td>
-            <td>199,99&euro</td>
-            <td><input type="number" value="1" min="1"></td>
-            <td>199,99&euro</td>
-            <td><button>Ezabatu</button></td>
-          </tr>
-          <tr>
-            <td>Baldurs Gate 3</td>
-            <td>15,99 &euro</td>
-            <td><input type="number" value="1" min="1"></td>
-            <td>15,99 &euro</td>
-            <td><button>Ezabatu</button></td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td>Guztira</td>
-            <td>31,98 &euro</td>
-            <td></td>
-          </tr>
-        </tfoot>
-      </table>
+      <div>
+        <input type="radio" id="paypal" name="ordainketa" value="paypal">
+        <label for="paypal">PayPal</label>
+        <div>
+          <img src="img/PayPal.png">
+        </div>
+      </div>
     </div>
+    </form>
 
-    <a href="Eskaria.html">
+    <a href="Eskaria4.html">
         <button>Hurrengoa</button>
 	<a>
-  </section>
+    </section>
 </main>
 		<footer>
 			<p>&copy; 2025 Lea Artibai Ikastetxea</p>

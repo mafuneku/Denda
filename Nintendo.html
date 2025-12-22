@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Def Leppard - Hysteria</title>
+		<title>Nintendo</title>
 		<style>
 			* {padding: 0; padding: 0;}
 	    * { padding: 0; margin: 0; }
@@ -98,6 +98,21 @@
         width: 150px;
         border: 1px #000000 solid;
     }
+
+    #menuToggle {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+        cursor: pointer;
+        background: #8fd0dc;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+
     
     header img {
         border-radius: 10px;
@@ -105,6 +120,27 @@
         width: 200px;
         border: 1px #000000 solid;
     }
+
+    @media (max-width: 762px) {
+    .menu-btn {
+        display: block;
+        margin: 1.96850393701%;
+        margin-bottom: 0;
+    }
+    #menua {
+        display: none;
+    }
+    #menuToggle:checked + .menu-btn + #menua {
+        display: block;
+    }
+    #menuLista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
     
 		</style>
 	</head>
@@ -113,6 +149,9 @@
 			<img src="img/logoa.jpg" alt="logoa">
 			<h1>Denda</h1>
 		</header>
+
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-btn">☰ Menua</label>
 	<nav id="menua">
 		<ul id="menuLista">
 			<a href="index.html">
@@ -143,7 +182,7 @@
 	</nav>
 		<main>
 			<p><a href="index.html">Hasiera</a> &gt; <a href="katalogoa.html">Katalogoa</a> &gt; <a href="Nintendo.html">Nintendo</a> &gt;</p>
-			<h2>Def Leppard - Hysteria</h2>
+			<h2>Nintendo</h2>
 			<img src="img/nintendo.jpg" alt="Nintendoren logoa">
 			<p>Nintendo, 1970eko hamarkadatik aurrera bideo-jokoen industriara bideratu zen eta mundu mailako lider bihurtu da.</p>
 			<p>Bideojokoak:</p>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>saskia</title>
+		<title>Eskaria</title>
 		<style>
 	* {padding: 0; padding: 0;}
     * { padding: 0; margin: 0; }
@@ -139,13 +139,41 @@
         gap: 10px;
         align-items: center;
     }
-    table {
-        width: 200px;
     }
+
+    form {
+        border: 1px #000000 solid;
+        width:fit-content;
+        padding: 1.96850393701%;
     }
-        
-    table {
-        margin: auto;
+
+    form div {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+       @media (max-width: 762px) {
+    .menu-btn {
+        display: block;
+        margin: 1.96850393701%;
+        margin-bottom: 0;
+    }
+    #menua {
+        display: none;
+    }
+    #menuToggle:checked + .menu-btn + #menua {
+        display: block;
+    }
+    #menuLista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    table, form {
+        width: fit-content;
+    }
     }
 		</style>
 	</head>
@@ -185,11 +213,49 @@
 			</a>
 		</ul>
 	</nav>
-<main>
-	<section>
-    <h1>Saskia</h1>
+	<main>
+    <p class="path"><a href="index.html">Hasiera</a> &gt; <a href="Eskaria.html">Eskaria</a> &gt; <a href="Eskaria.html">Azken pausoa</a> &gt;</p>
+		<section>
+    <h1>Eskaria</h1>
 
-    <h2>Produktuak</h2>
+    <h2>Zure datuak</h2>
+
+    <form>
+      <div>
+        <label for="izena">Izena:</label>
+        <label id="izena" name="izena">Eduardo</label>
+      </div>
+
+      <div>
+        <label for="abizena">Abizena:</label>
+        <label id="abizena" name="abizena">Salamanca</label>
+      </div>
+
+      <div>
+        <label for="helbidea">Helbidea:</label>
+        <label id="helbidea" name="helbidea">Calle 12</label>
+      </div>
+
+      <div>
+        <label for="herria">Herria:</label>
+        <label id="herria" name="herria">Markina</label>
+      </div>
+
+      <div>
+        <label for="posta">Posta-kodea:</label>
+        <label id="posta" name="posta">48270</label>
+      </div>
+
+      <div>
+        <label for="probintzia">Probintzia:</label>
+        <label id="probintzia" name="probintzia">Bizkaia</label>
+      </div>
+
+      <div>
+        <label for="emaila">E-maila:</label>
+        <label id="emaila" name="emaila">mafuneku12@gmail.com</label>
+      </div>
+    </form>
 
     <div class="produktuak">
       <table>
@@ -205,16 +271,16 @@
         <tbody>
           <tr>
             <td>Grand Theft Auto VI</td>
-            <td>199,99&euro</td>
-            <td><input type="number" value="1" min="1"></td>
+            <td>199,98&euro</td>
+            <td>2</td>
             <td>199,99&euro</td>
             <td><button>Ezabatu</button></td>
           </tr>
           <tr>
             <td>Baldurs Gate 3</td>
-            <td>15,99 &euro</td>
-            <td><input type="number" value="1" min="1"></td>
-            <td>15,99 &euro</td>
+            <td>69,99 &euro</td>
+            <td>1</td>
+            <td>69,99 &euro</td>
             <td><button>Ezabatu</button></td>
           </tr>
         </tbody>
@@ -228,10 +294,10 @@
       </table>
     </div>
 
-    <a href="Eskaria.html">
+    <a href="Eskaria3.html">
         <button>Hurrengoa</button>
 	<a>
-  </section>
+    </section>
 </main>
 		<footer>
 			<p>&copy; 2025 Lea Artibai Ikastetxea</p>

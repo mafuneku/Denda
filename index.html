@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Katalogoa</title>
+    <title>Hasiera</title>
 </head>
 <style>
     * { padding: 0; margin: 0; }
@@ -10,28 +10,40 @@
         font-size: xx-large;
     }
 
-    body {
-        background: #ffffff;
-    }
     header, nav, main, footer {
         background: #c3e7ee;
         border-radius: 15px;
     }
 
+    .Eskaintzak {
+        border: 1px dashed black;
+    }
+
     .Eskaintzak div {
         background: #eef8fd;
-        width: 25%;
+    }
+
+    .Nobedadeak {
+        border: 1px dashed black;
     }
 
     .Nobedadeak div {
         background: #eef8fd;
-        width: 25%;
+    }
+
+    .aurre-erosketa {
+        border: 1px dashed black;
+    }
+    
+    .aurre-erosketa div{
+        background: #eef8fd;
     }
 
     body {
         max-width: 762px;
         margin: auto;
         border: 1px dashed black;
+        background: #ffffff;
     }
     header {
         border: 1px dashed black;
@@ -65,16 +77,10 @@
         margin: 2%;
 	}
 
-    .Nobedadeak {
-        display: flex;
-        flex-wrap: wrap;
+	nav img {
+        width: 40px;
     }
-
-    .Eskaintzak {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
+    
 	nav img {
         width: 40px;
     }
@@ -108,7 +114,7 @@
     .bideojokoak img {
         border-radius: 15px;
         object-fit: cover; 
-        width: 150px;
+        width: 100px;
         border: 1px #000000 solid;
     }
     
@@ -118,6 +124,89 @@
         width: 200px;
         border: 1px #000000 solid;
     }
+
+    .bideojokoak div {
+        width: auto;
+    }
+
+    main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    }
+
+    .Eskaintzak {
+        grid-column: 2/4;
+    }
+
+    .Eskaintzak img {
+        width: 140px;
+    }
+
+    @media (max-width: 762px) {
+        main {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .aurre-erosketa {
+            grid-column: 1/5;
+        }
+        .Nobedadeak {
+            grid-column: 1/1;
+        }
+        .Eskaintzak {
+            grid-column: 2/5;
+        }
+    }
+
+    @media (max-width: 381px) {
+        main {
+            grid-template-columns: 1fr;
+        }
+        .Eskaintzak{
+            grid-column: 1/5
+        }
+        .Nobedadeak{
+            grid-column: 1/5;
+        }
+        .aurre-erosketa {
+            grid-column: 1/5;
+        }
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+        cursor: pointer;
+        background: #8fd0dc;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+
+    @media (max-width: 762px) {
+    .menu-btn {
+        display: block;
+        margin: 1.96850393701%;
+        margin-bottom: 0;
+    }
+    #menua {
+        display: none;
+    }
+    #menuToggle:checked + .menu-btn + #menua {
+        display: block;
+    }
+    #menuLista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    }
+
     
 </style>
 
@@ -127,7 +216,8 @@
     <img src="img/logoa.jpg" alt="logoa">
     <h1>Denda</h1>
 </header>
-
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-btn">☰ Menua</label>
 <nav id="menua">
     <ul id="menuLista">
     <a href="index.html">
@@ -157,13 +247,9 @@
 
     </ul>
 </nav>
-
 <main class="bideojokoak">
-<section>
-    <h1>Hasiera</h1>
+    <section class="Nobedadeak">
     <h2>Nobedadeak</h2>
-
-	<div class="Nobedadeak">
 
     <div id="eskaintza1" class="div1">
         <img src="img/001.png"><br>
@@ -171,7 +257,7 @@
         Zelda Tears of The Kingdom<br>
         Egoera: berria<br>
         Formatua: Switch<br>
-        Salneurria: 69,99 €
+        Salneurria: 69,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -181,7 +267,7 @@
         GTA 6<br>
         Egoera: berria<br>
         Formatua: PS5/Xbox Series<br>
-        Salneurria: 69,99 €
+        Salneurria: 69,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -191,7 +277,7 @@
         Elden Ring<br>
         Egoera: berria<br>
         Formatua: PC/Xbox/PS5<br>
-        Salneurria: 39,99 €
+        Salneurria: 39,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -201,7 +287,7 @@
         Cyberpunk 2077<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 20,00 €
+        Salneurria: 20,00 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -211,7 +297,7 @@
         BloodBorne<br>
         Egoera: berria<br>
         Formatua: PS4<br>
-        Salneurria: 20,00 €
+        Salneurria: 20,00 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -221,7 +307,7 @@
         Assassins creed Mirage<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 20,00 €
+        Salneurria: 20,00 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -231,7 +317,7 @@
         FC 25<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 79,99 €
+        Salneurria: 79,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -241,7 +327,7 @@
         Tekken 8<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 69,99 €
+        Salneurria: 69,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -251,7 +337,7 @@
         Minecraft<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 10,00 €
+        Salneurria: 10,00 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -261,14 +347,13 @@
         God of War<br>
         Egoera: berria<br>
         Formatua: PS5<br>
-        Salneurria: 20,00 €
+        Salneurria: 20,00 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
-</section>
+    </section>
 
-<section>
+    <section class="Eskaintzak">
     <h2>Eskaintzak</h2>
-    <div class="Eskaintzak">
 
     <div id="eskaintza11" class="div11">
         <img src="img/11.jpg"><br>
@@ -276,7 +361,7 @@
         Super Mario Odyssey<br>
         Egoera: berria<br>
         Formatua: Switch<br>
-        Salneurria: 39,99 €
+        Salneurria: 39,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -286,7 +371,7 @@
         Resident Evil 4 Remake<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 49,99 €
+        Salneurria: 49,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -296,7 +381,7 @@
         The Last of Us Part II<br>
         Egoera: berria<br>
         Formatua: PS5<br>
-        Salneurria: 29,99 €
+        Salneurria: 29,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -306,7 +391,7 @@
         Final Fantasy VII Remake<br>
         Egoera: berria<br>
         Formatua: PS5/PC<br>
-        Salneurria: 39,99 €
+        Salneurria: 39,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -316,7 +401,7 @@
         Like a Dragon: Infinite Wealth<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 59,99 €
+        Salneurria: 59,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -326,7 +411,7 @@
         Far Cry 6<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 29,99 €
+        Salneurria: 29,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -336,7 +421,7 @@
         Diablo IV<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 69,99 €
+        Salneurria: 69,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -346,7 +431,7 @@
         Call of Duty: Modern Warfare III<br>
         Egoera: berria<br>
         Formatua: PC/PS5/Xbox<br>
-        Salneurria: 59,99 €
+        Salneurria: 59,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -356,7 +441,7 @@
         Half-Life Alyx<br>
         Egoera: berria<br>
         Formatua: PC (VR)<br>
-        Salneurria: 50,00 €
+        Salneurria: 50,00 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
@@ -366,14 +451,45 @@
         Baldur's Gate 3<br>
         Egoera: berria<br>
         Formatua: PC/PS5<br>
-        Salneurria: 59,99 €
+        Salneurria: 59,99 &euro
         <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
     </div>
 
-    </div>
-</div>
+    </section>
 
-</section>
+    <section class="aurre-erosketa">
+    <h2>Aurre-erosketa</h2>
+    <div id="eskaintza20" class="div20">
+        <img src="img/20.jpg"><br>
+        Larian Studios<br>
+        Baldur's Gate 3<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5<br>
+        Salneurria: 59,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+    
+    <div id="eskaintza17" class="div17">
+        <img src="img/17.jpg"><br>
+        Blizzard<br>
+        Diablo IV<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 69,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza2" class="div2">
+        <img src="img/002.png"><br>
+        Rockstar Games<br>
+        GTA 6<br>
+        Egoera: berria<br>
+        Formatua: PS5/Xbox Series<br>
+        Salneurria: 69,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+    </section>
+
 </main>
 
 <footer>
