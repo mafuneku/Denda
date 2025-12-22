@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+    <title>Eskaintzak</title>
+</head>
+<style>
+    * { padding: 0; margin: 0; }
+    body {
+        background: #ffffff;
+    }
+    header, nav, main, footer {
+        background: #c3e7ee;
+        border-radius: 15px;
+    }
+
+    .Eskaintzak div {
+        background: #eef8fd;
+        width: 40%;
+    }
+
+    body {
+        max-width: 762px;
+        margin: auto;
+        border: 1px dashed black;
+    }
+    header {
+        border: 1px dashed black;
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+    }
+    nav {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+    main {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+    footer {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+
+	.bideojokoak div {
+		border: 1px dashed black;
+        padding: 1.96850393701%;
+	}
+
+    .Eskaintzak {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+	nav img {
+        width: 40px;
+    }
+    
+    #menuLista a {
+        position: relative;
+        display: inline-block;
+    }
+
+	@media only screen and (max-width: 762px) {
+			.Eskaintzak {
+				grid-template-columns: 1fr;
+				grid-template-rows: none;
+			}
+			.Eskaintzak > div {
+				grid-area: auto !important;
+			}
+		}
+
+    #menuLista a span {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        padding: 2px 6px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 14px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s ease;
+    }
+
+    #menuLista a:hover span {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .Eskaintzak img {
+        border-radius: 15px;
+        object-fit: cover; 
+        width: 150px;
+        border: 1px #000000 solid;
+    }
+    
+    header img {
+        border-radius: 10px;
+        object-fit: cover; 
+        width: 200px;
+        border: 1px #000000 solid;
+    }
+    
+
+        
+        #menuToggle {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+        cursor: pointer;
+        background: #8fd0dc;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+    
+    @media (max-width: 762px) {
+    .menu-btn {
+        display: block;
+        margin: 1.96850393701%;
+        margin-bottom: 0;
+    }
+    #menua {
+        display: none;
+    }
+    #menuToggle:checked + .menu-btn + #menua {
+        display: block;
+    }
+    #menuLista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+</style>
+
+<body>
+
+<header class="Izenburua">
+    <img src="img/logoa.jpg" alt="logoa">
+    <h1>Denda</h1>
+</header>
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-btn">☰ Menua</label>
+<nav id="menua">
+    <ul id="menuLista">
+    <a href="index.html">
+    <img src="img/Hasiera.jpg">
+    <span>Hasiera</span>
+    </a>
+
+    <a href="katalogoa.html">
+    <img src="img/Katalogoa.jpg">
+    <span>Katalogoa</span>
+    </a>
+
+    <a href="nobedadeak.html">
+    <img src="img/Nobedadeak.jpg">
+    <span>Nobedadeak</span>
+    </a>
+
+    <a href="Kontaktua.html">
+    <img src="img/Kontaktua.jpg">
+    <span>Kontaktua</span>
+    </a>
+
+    <a href="eskaintzak.html">
+    <img src="img/Eskaintzak.jpg">
+    <span>Eskaintzak</span>
+    </a>
+
+    </ul>
+</nav>
+<main class="bideojokoak">
+<section>
+    <p class="path"><a href="index.html">Hasiera</a> &gt; <a href="eskaintzak.html">Eskaintzak</a> &gt;</p>
+    <h2>Eskaintzak</h2>
+    <div class="Eskaintzak">
+
+    <div id="eskaintza11" class="div11">
+        <img src="img/11.jpg"><br>
+        Nintendo<br>
+        Super Mario Odyssey<br>
+        Egoera: berria<br>
+        Formatua: Switch<br>
+        Salneurria: 39,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza12" class="div12">
+        <img src="img/12.jpg"><br>
+        Capcom<br>
+        Resident Evil 4 Remake<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 49,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza13" class="div13">
+        <img src="img/13.jpg"><br>
+        Naughty Dog<br>
+        The Last of Us Part II<br>
+        Egoera: berria<br>
+        Formatua: PS5<br>
+        Salneurria: 29,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza14" class="div14">
+        <img src="img/14.jpg"><br>
+        Square Enix<br>
+        Final Fantasy VII Remake<br>
+        Egoera: berria<br>
+        Formatua: PS5/PC<br>
+        Salneurria: 39,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza15" class="div15">
+        <img src="img/15.jpg"><br>
+        Sega<br>
+        Like a Dragon: Infinite Wealth<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 59,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza16" class="div16">
+        <img src="img/16.jpg"><br>
+        Ubisoft<br>
+        Far Cry 6<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 29,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza17" class="div17">
+        <img src="img/17.jpg"><br>
+        Blizzard<br>
+        Diablo IV<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 69,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza18" class="div18">
+        <img src="img/18.jpg"><br>
+        Activision<br>
+        Call of Duty: Modern Warfare III<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5/Xbox<br>
+        Salneurria: 59,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza19" class="div19">
+        <img src="img/19.jpg"><br>
+        Valve<br>
+        Half-Life Alyx<br>
+        Egoera: berria<br>
+        Formatua: PC (VR)<br>
+        Salneurria: 50,00 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    <div id="eskaintza20" class="div20">
+        <img src="img/20.jpg"><br>
+        Larian Studios<br>
+        Baldur's Gate 3<br>
+        Egoera: berria<br>
+        Formatua: PC/PS5<br>
+        Salneurria: 59,99 &euro
+        <br><a href="ZeldaTearsOfTheKingdome.html">Informazio gehiago</a>
+    </div>
+
+    </div>
+</div>
+
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Lea Artibai Ikastetxea</p>
+</footer>
+
+</body>
+</html>

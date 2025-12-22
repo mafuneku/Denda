@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Eskaria</title>
+		<style>
+	* {padding: 0; padding: 0;}
+    * { padding: 0; margin: 0; }
+    * { padding: 0; margin: 0; }
+    body {
+        background: #ffffff;
+    }
+    header, nav, main, footer {
+        background: #c3e7ee;
+    }
+
+	main img {
+		width: 200px;
+		border: 1px solid black;
+	}
+
+    .bideojokoak div {
+        background: #eef8fd;
+    }
+
+    body {
+        max-width: 762px;
+        margin: auto;
+        border: 1px dashed black;
+    }
+    header {
+        border: 1px dashed black;
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+    }
+    nav {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+    main {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+    footer {
+        margin: 1.96850393701%;
+        padding: 1.96850393701%;
+        width: 91.8635170604%;
+        border: 1px dashed black;
+    }
+
+	.bideojokoak div {
+		border: 1px dashed black;
+        padding: 1.96850393701%;
+	}
+
+    .bideojokoak {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+	nav img {
+        width: 40px;
+    }
+    
+    #menuLista a {
+        position: relative;
+        display: inline-block;
+    }
+
+    #menuLista a span {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        padding: 2px 6px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 14px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s ease;
+    }
+
+    #menuLista a:hover span {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bideojokoak img {
+        border-radius: 15px;
+        object-fit: cover; 
+        width: 150px;
+        border: 1px #000000 solid;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+        cursor: pointer;
+        background: #8fd0dc;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+
+    
+    header img {
+        border-radius: 10px;
+        object-fit: cover; 
+        width: 200px;
+        border: 1px #000000 solid;
+    }
+
+    @media (max-width: 762px) {
+    .menu-btn {
+        display: block;
+        margin: 1.96850393701%;
+        margin-bottom: 0;
+    }
+    #menua {
+        display: none;
+    }
+    #menuToggle:checked + .menu-btn + #menua {
+        display: block;
+    }
+    #menuLista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    }
+
+    form {
+        border: 1px #000000 solid;
+        width:fit-content;
+        padding: 1.96850393701%;
+    }
+
+    form div {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: center;
+    margin-bottom: 2%;
+    }
+        
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="img/logoa.jpg" alt="logoa">
+			<h1>Denda</h1>
+		</header>
+
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-btn">☰ Menua</label>
+	<nav id="menua">
+		<ul id="menuLista">
+			<a href="index.html">
+			<img src="img/Hasiera.jpg">
+			<span>Hasiera</span>
+			</a>
+
+			<a href="katalogoa.html">
+			<img src="img/Katalogoa.jpg">
+			<span>Katalogoa</span>
+			</a>
+
+			<a href="nobedadeak.html">
+			<img src="img/Nobedadeak.jpg">
+			<span>Nobedadeak</span>
+			</a>
+
+			<a href="Kontaktua.html">
+			<img src="img/Kontaktua.jpg">
+			<span>Kontaktua</span>
+			</a>
+
+			<a href="eskaintzak.html">
+			<img src="img/Eskaintzak.jpg">
+			<span>Eskaintzak</span>
+			</a>
+		</ul>
+	</nav>
+		<main>
+		<section>
+    <h1>Eskaria</h1>
+
+    <h2>Zure datuak</h2>
+
+    <form>
+      <div>
+        <label for="izena">Izena:</label>
+        <input type="text" id="izena" name="izena">
+      </div>
+
+      <div>
+        <label for="abizena">Abizena:</label>
+        <input type="text" id="abizena" name="abizena">
+      </div>
+
+      <div>
+        <label for="helbidea">Helbidea:</label>
+        <input type="text" id="helbidea" name="helbidea">
+      </div>
+
+      <div>
+        <label for="herria">Herria:</label>
+        <input type="text" id="herria" name="herria">
+      </div>
+
+      <div>
+        <label for="posta">Posta-kodea:</label>
+        <input type="text" id="posta" name="posta">
+      </div>
+
+      <div>
+        <label for="probintzia">Probintzia:</label>
+        <input type="text" id="probintzia" name="probintzia">
+      </div>
+
+      <div>
+        <label for="emaila">E-maila:</label>
+        <input type="email" id="emaila" name="emaila">
+      </div>
+    <a href="Eskaria2.html">
+        <button>Hurrengoa</button>
+	<a>
+    </form>
+    </section>
+</main>
+		<footer>
+			<p>&copy; 2025 Lea Artibai Ikastetxea</p>
+		</footer>
+	</body>
+</html>
